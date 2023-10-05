@@ -1,7 +1,7 @@
 # otel-metrics-cpu-utilization
 
 There is a possible issue in `system.cpu.utilization` and `process.cpu.utilization` 
-host metrics. The values provided by the metric seems not to be following their semmantic
+host metrics. The values provided by the metric seems not to be following their semantic
 conventions. the goal of this repository is to provide an easy way to get sample data
 to confirm it.
 
@@ -17,7 +17,7 @@ To get host metrics on the terminal just run
 
 inspect the logs
 
-## Utilizaiton metrics
+## Utilization metrics
 
 `system.cpu.utilization` is a gauge with values within the segment [0,1] according
 to its [semantic convetion](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/system/system-metrics.md#metric-systemcpuutilization). In the logged metrics we see that the value can surpass
